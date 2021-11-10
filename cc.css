@@ -1,0 +1,150 @@
+.staff {
+  align-content: center;
+  text-align: center;
+  padding: 5%;
+}
+.staff-head-box {
+  text-align: center;
+  color: rgb(104, 79, 64);
+  display: block;
+  font-size: 17px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.line-below {
+  font-size: 17px;
+  color: dimgray;
+}
+.S-name {
+  color: #684f40;
+  font-size: 35px;
+  font-style: italic;
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.staff-grid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: stretch;
+  align-items: center;
+  text-align: center;
+  /* position: relative; */
+}
+
+
+
+
+
+.outer {
+  border: 2px solid black;
+  height: 30%;
+  width: 14%;
+  margin: 2%;
+  width:fit-content;
+  
+  /* padding: 10px; */
+}
+
+
+
+.staff-name {
+  font-size: medium;
+  text-align: center;
+  font-size: 21px;
+  align-items: baseline;
+  border-bottom: #fdb822;
+}
+.back-icon {
+  border: 2px solid ivory;
+  border-radius: 25%;
+}
+.set-img-icon {
+  background-color: white;
+}
+
+
+.flip-card {
+  background-color: transparent;
+  max-width: 100%;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  /* margin-top: -10px; */
+}
+
+.flip-card-inner {
+  /* position: relative; */
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.set-img ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.outer:hover{
+  border-color: #fdb822;
+}
+.flip-card-front{
+  
+    margin-top: -30px;
+  /* width: 50%;
+  height:70%; */
+}
+.set-img-icon i{
+  color:#fdb822;
+
+}
+.list-style{
+  display: inline-block;
+}
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color:white;
+  color: black;
+}
+.flip-card-back h3{
+  background-color: transparent;
+}
+ul {
+  list-style-type: none;
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+.set-img-icon{
+  margin:40px ;
+  
+}
+.fab{
+  max-width: 0;
+    max-height: 0;
+    cursor: pointer;
+    overflow: hidden;
+    transition: max-height 0.8s;
+}
+
+.flip-card-back {
+  background-color: #bebcbc;
+  color: white;
+  transform: rotateY(180deg);
+}
